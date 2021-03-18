@@ -1,0 +1,16 @@
+# building
+mvn clean install
+
+# launching server
+java -cp rcpserver/target/rcpserver-1.0-SNAPSHOT.jar;rcpserver/target/lib/* com.mycompany.testtask.rcpserver.RcpServer 3131
+# launching client
+java -cp rcpclient/target/rcpclient-1.0-SNAPSHOT.jar;rcpclient/target/lib/* com.mycompany.testtask.rcpclient.ClientLauncher 3131
+
+#service package
+com.mycompany.testtask.rcpserver.service
+#client class
+com.mycompany.testtask.rcpclient.Client
+
+#results logs in files
+client.log, server.log
+
